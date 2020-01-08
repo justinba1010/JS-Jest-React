@@ -1,24 +1,34 @@
 {
   "name": "testing-react-tools",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "React Tools Test",
+  "mode": "development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/parcel serve index.js"
+    "start": "webpack-dev-server --config webpack.config.js"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "parcel": "^1.12.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-testing-library": "^8.0.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinba1010/JS-Jest-React.git"
   },
+  "author": "justinba1010",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinba1010/JS-Jest-React/issues"
+  },
+  "homepage": "https://github.com/justinba1010/JS-Jest-React#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.7.4",
-    "babel-jest": "^24.9.0",
-    "jest": "^24.9.0",
-    "react-test-renderer": "^16.12.0"
+    "react-hot-loader": "^4.12.18",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5"
   }
 }
