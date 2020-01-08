@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.config.js"
+    "start": "./node_modules/.bin/webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,13 +20,14 @@
   "homepage": "https://github.com/justinba1010/JS-Jest-React#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.7.4",
+    "babel-cli": "^6.26.0",
     "react-hot-loader": "^4.12.18",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@babel/core": "^7.7.7",
-    "babel": "^6.23.0",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "parcel": "^1.12.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "webpack": "^4.41.5"
